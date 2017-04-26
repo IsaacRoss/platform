@@ -14,3 +14,13 @@ Platform.Repo.insert!(%Platform.Accounts.Player{display_name: "Sonic Fox",
 
 Platform.Repo.insert!(%Platform.Accounts.Player{display_name: "Noble Illusions", 
                       username: "illusions", score: 1000})
+Platform.Repo.insert!(%Platform.Accounts.Player{display_name: "Shujinkidink", 
+                      username: "Dink", score: 1000})
+Platform.Repo.insert!(%Platform.Accounts.Player{display_name: "Fro Magnum Man", 
+                      username: "FroMagnumMan", score: 1000})
+Platform.Repo.insert!(%Platform.Products.Game{title: "Adventure Game", 
+                      description: "Adventure driving game", author_id: 1})
+Platform.Repo.insert!(%Platform.Products.Game{title: "Driving Game", 
+                      description: "Driving game example", author_id: 2})
+Platform.Repo.insert!(%Platform.Products.Game{title: "Platform Game", 
+                      description: "Platform game example", author_id: 3})

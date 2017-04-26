@@ -12,6 +12,7 @@ defmodule Platform.Web.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+
   end
 
   scope "/", Platform.Web do
@@ -21,6 +22,12 @@ defmodule Platform.Web.Router do
     get "/elm", PageController, :index
     resources "/players", PlayerController
     resources "/sessions", PlayerSessionController, only: [:new, :create, :delete]
+  end
+  
+  scope "/api", Platform.Web do
+    pipe_through :api
+
+    resources "/games", GameController, except: [:new, :edit]
   end
 
   # Other scopes may use custom stacks.
