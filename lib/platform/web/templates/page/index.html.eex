@@ -1,5 +1,2 @@
-<p class="well">Signed in as <strong><%= @current_user.username %></strong></p>
-<%= link("List All Players", to: "/players/", class: "btn btn-info") %>
-<%= link("Sign Out", to: player_session_path(@conn, :delete, @current_user), method: "delete", class: "btn btn-success") %>
 
 <div class="elm-container"></div>
