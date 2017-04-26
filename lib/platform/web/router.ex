@@ -7,6 +7,7 @@ defmodule Platform.Web.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug Platform.Web.PlayerAuthController, repo: Platform.Repo
   end
 
   pipeline :api do
@@ -16,8 +17,10 @@ defmodule Platform.Web.Router do
   scope "/", Platform.Web do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", PlayerController, :new
+    get "/elm", PageController, :index
     resources "/players", PlayerController
+    resources "/sessions", PlayerSessionController, only: [:new, :create, :delete]
   end
 
   # Other scopes may use custom stacks.
