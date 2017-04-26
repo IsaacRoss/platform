@@ -1,4 +1,5 @@
 # Platform
+[![Build Status](https://travis-ci.org/IsaacRoss/platform.svg?branch=master)](https://travis-ci.org/IsaacRoss/platform)
 
 To start your Phoenix server:
 
