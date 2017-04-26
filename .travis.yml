@@ -1,5 +1,12 @@
 language: elixir
 elixir:
-  - 1.4.2
+- 1.4.2
 otp_release:
-  - 19.0
+- 19.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: dD3ruFVsrm7Y9CTdw4EVXHkngGTXsc3LgvmtMplFd6UJDQGxuA0tO92zc7ju0+qK5vpz/cKrPR4K4pXFbtLWuRWYvB8wHAbHPjIS0lQZ8OcfvlGXK+B/HvW+yZYc1fGtnr2kjre1i786GgVs3LE1/k8uNbWpRPYQfcr5aXvcJjjL1SUlkL6juNnOmzTi7pR5i0b+R6w2S4QVmV6NrDPHRpXo+/80M3QiAk/lax6bTT84EwEawAR88QmLhGkIh6M4W+RJJ4W12ThEWRGqzeNtC+KtzfJOs++RbzSVXwRQILu27U0EDvEiB08ewT9bcUo9/Jb00ZscD+261SLvjYxsmXEMWtKO2QDsuId37vMtlFq81kZG65znsywDR1bqhd8QIvfDmrmH/0aF6svMTRf+XjEXUaywEyoKJ1G6vI5wZ7XSqGim2AtwlbZJef98Uf0qgn57f0ZCC/mssE2S/zXgP2zPlK+5aGuL5NZ++omQO8dmkRs47t1OAR1EZ47W2NCbbf3ZXfwxtzWHmDkzBSSY83SpLl1XjXemPSC9TTgbH6E2mjEqW4EA3Eim2QmJkjRcMCfSgzpPas1kDj+T0duARJc9CpORwnNGsgqUe0qMwkxU054EBjxYqgwEFWs3Wh5SI04ZYZlgmzOrTCJmKLrShYMGnAhOhtdB9OPWN49KeVY=
+  app: phlem
+  on:
+    repo: IsaacRoss/platform
