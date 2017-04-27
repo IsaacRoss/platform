@@ -26,5 +26,4 @@ npm-debug.log
 # variables.
 /config/*.secret.exs
 /lib/platform/web/elm/elm-stuff
-/assets/vendor/main.js
 
