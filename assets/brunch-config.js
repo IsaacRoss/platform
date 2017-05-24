@@ -34,7 +34,7 @@ exports.config = {
     elmBrunch: {
       // Do not use ES6 compiler in vendor code
       elmFolder: "../lib/platform/web/elm",
-      mainModules: ["Main.elm"],
+      mainModules: ["Main.elm", "Game.elm"],
       outputFolder: "../../../../assets/vendor"
     }
   },
